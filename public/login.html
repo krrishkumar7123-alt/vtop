@@ -1,0 +1,601 @@
+<html><head>
+    
+
+        <meta charset="utf-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VIT Bhopal - VTOP</title>
+        <meta name="description" content="">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <meta charset="ISO-8859-1">
+        <meta name="description" content="vtop">
+        <meta name="robots" content="NOODP,NOYDIR">
+        <meta name="keywords" content=" vtop ">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+        <meta http-equiv="cache-control" content="max-age=0">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    
+    <link rel="stylesheet" type="text/css" href="/vtop/webjars/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/vtop/webjars/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/vtop/assets/css/PreLogin.css">
+    <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+</head>
+
+<body class="WhiteBackground" style="margin-top: 58px;">
+
+    <nav class="navbar navbar-expand-lg bg-light headerBackgroundColor py-1 fixed-top shadow" id="vtopOpenPageHeader">
+        <div class="container-fluid d-flex align-items-center">
+            <a class="navbar-brand VITLogoStyle text-light" href="javascript:void(0);">
+                <span class="h1 fw-bold">VIT</span>
+
+
+
+
+            </a>
+            <span class="navbar-text text-light ms-2">(Bhopal Campus)</span>
+
+            <!-- 🌐 Google Translate UI -->
+            <div class="ms-auto d-flex align-items-center">
+                <div id="google_translate_element"></div>
+            </div>
+
+        </div>
+    </nav>
+    <script>
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+          }, 'google_translate_element');
+        }
+    </script>
+
+    <style>
+        .goog-te-banner-frame.skiptranslate { display:none !important; }
+        body { top:0px !important; }
+    </style>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-11 col-sm-8 col-md-6 col-lg-6 col-xl-4 WhiteBackground shadow-lg mx-auto p-0 mt-5" id="loginBox">
+            
+
+                <!-- ================= LOGIN CARD ================= -->
+                <div class="card border-0" id="loginCard">
+                    <div class="card-header loginBoxBorder">
+                        <h4 class="fw-bold">VTOP Login</h4>
+                    </div>
+                    <div class="card-body" id="bodyContent">
+                        <form id="vtopLoginForm" name="vtopLoginForm" class="form-signin" method="POST" action="/vtop/login"><input type="hidden" name="_csrf" value="f1cc800f-a6d8-482d-ac0e-a4a438371510">
+
+                            <!-- USERID -->
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="username" name="username" maxlength="15" size="15" onkeyup="this.value = this.value.toUpperCase()" autocomplete="off">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user text-primary" aria-hidden="true"></i></span>
+                            </div>
+
+                            <!-- PASSWORD -->
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="password" class="form-control" placeholder="Password" id="password" name="password" aria-describedby="basic-addon2">
+                                <button id="basic-addon2" class="btn btn-light border-secondary" type="button">
+                                    <i class="fa fa-eye text-danger fw-bold" id="passwordIcon" onclick="javascript:toggleEye();" aria-hidden="false"></i>
+                                </button>
+                            </div>
+
+                            <!-- IN BUILT CAPTCHA  -->
+                            
+                                <div class="row">
+                                    <div class="col-7 mx-auto">
+                                        <div class="input-group input-group-sm border  mb-3" id="captchaBlock">
+                                            
+                                                <img class="form-control img-fluid bg-light border-0" height="325" src="data:image/jpeg;base64,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" aria-describedby="button-addon2">
+                                                <button class="btn btn-success" type="button" onclick="loadCaptcha()" id="button-addon2"> <i class="fa fa-refresh" aria-hidden="true"></i></button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control form-control-sm" autocomplete="off" maxlength="6" onkeyup="this.value = this.value.toUpperCase()" id="captchaStr" name="captchaStr" aria-describedby="captchaHelp" placeholder="Enter CAPTCHA shown above">
+                                </div>
+                            
+
+                            <!-- GOOGLE CAPTCHA  -->
+                            
+
+                            <button type="button" onclick="javascript:callBuiltValidation();" id="submitBtn" class="btn btn-sm btn-primary float-end">Submit</button>
+
+                            
+                        </form>
+                    </div>
+
+                    
+
+                    <div class="card-footer border-0 small">
+
+    <a class="fw-bold text-decoration-none" onclick="javascript:resetPassword()" href="javascript:void(0)">
+        Forgot Password
+    </a>
+    <br>
+
+    <a class="fw-bold text-decoration-none" onclick="javascript:forgotUserID()" href="javascript:void(0)">
+        Forgot LoginId
+    </a>
+    <br>
+
+    <a class="fw-bold text-decoration-none" href="javascript:void(0)" onclick="showLoginIssue(true)">
+        <strong><i>Login Issue</i></strong>
+    </a>
+
+    <br>
+
+    <div class="text-end">
+        <a class="fw-light fst-italic text-success" href="/vtop/open/page">
+            <strong><i>Go to Home Page</i></strong>
+        </a>
+    </div>
+
+</div>
+                </div>
+                <!-- ================= /LOGIN CARD ================= -->
+
+
+                <!-- ================= LOGIN ISSUE CARD (hidden until opened) ================= -->
+                <div class="card border-0 d-none" id="loginIssueBox">
+
+                    <div class="card-header loginBoxBorder">
+                        <h4 class="fw-bold">Login Issue</h4>
+                        <div class="small text-muted">Tell us what is stopping you from logging in. Support will reply by email.</div>
+                    </div>
+
+                    <div class="card-body">
+
+                        <div id="liMsg" class="d-none" role="alert"></div>
+
+                        <form id="loginIssueForm" name="loginIssueForm" novalidate="" action="/vtop/ticketrise/saveLoginIssue" method="POST" enctype="multipart/form-data"><input type="hidden" name="_csrf" value="f1cc800f-a6d8-482d-ac0e-a4a438371510">
+
+                            <input type="hidden" name="_csrf" value="f1cc800f-a6d8-482d-ac0e-a4a438371510">
+
+                            <!-- USER ID -->
+                            <div class="input-group input-group-sm mb-1">
+                                <input type="text" class="form-control" placeholder="VTOP User ID" id="liUserId" name="userId" maxlength="15" autocomplete="off" aria-label="User ID" onkeyup="this.value = this.value.toUpperCase()">
+                                <span class="input-group-text"><i class="fa fa-user text-primary" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="text-danger small mb-3 d-none" id="liUserIdErr"></div>
+<br>
+                            <!-- EMAIL -->
+                            <div class="input-group input-group-sm mb-1">
+                                <input type="email" class="form-control" placeholder="Official email address" id="liEmail" name="email" maxlength="150" autocomplete="email" aria-label="Email address">
+                                <span class="input-group-text"><i class="fa fa-envelope text-primary" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="form-text mb-1">Only official email addresses are accepted.</div>
+                            <div class="text-danger small mb-3 d-none" id="liEmailErr"></div>
+
+                            <!-- CATEGORY -->
+                            <select class="form-select form-select-sm mb-1" id="liCategory" name="category" aria-label="Category">
+                                <option value="">-- Select Category --</option>
+                                <option value="LOGIN ISSUE">LOGIN ISSUE</option>
+                                <option value="PASSWORD ISSUE">PASSWORD ISSUE</option>
+                                <option value="OTP ISSUE">OTP ISSUE</option>
+                                <option value="CAPTCHA ISSUE">CAPTCHA ISSUE</option>
+                                <option value="ACCOUNT ISSUE">ACCOUNT ISSUE</option>
+                                <option value="OTHER">OTHER</option>
+                            </select>
+                            <div class="text-danger small mb-3 d-none" id="liCategoryErr"></div>
+
+                            <!-- DESCRIPTION -->
+                            <textarea class="form-control form-control-sm mb-1" id="liDescription" name="description" rows="4" maxlength="5000" aria-label="Description" placeholder="Describe your login issue in detail"></textarea>
+                            <div class="d-flex justify-content-between small mb-3">
+                                <span class="text-danger d-none" id="liDescriptionErr"></span>
+                                <span class="text-muted ms-auto"><span id="liCount">0</span> / 5000</span>
+                            </div>
+
+                            <!-- SCREENSHOT -->
+                            <label for="liImage" class="form-label small fw-bold mb-1">Screenshot</label>
+                            <input type="file" class="form-control form-control-sm mb-1" id="liImage" name="image" accept=".jpg,.jpeg,.png,image/jpeg,image/png" required="">
+                            <div class="form-text">JPG, JPEG or PNG. Maximum 5 MB.</div>
+                            <div class="text-danger small d-none" id="liImageErr"></div>
+
+                            <div class="d-none align-items-center border rounded p-2 mt-2" id="liPreviewBox">
+                                <img id="liPreview" alt="Screenshot preview" class="rounded border me-3" style="width:64px;height:64px;object-fit:cover;">
+                                <div class="small flex-grow-1">
+                                    <div class="fw-bold text-break" id="liFileName"></div>
+                                    <div class="text-muted" id="liFileSize"></div>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-outline-danger" id="liRemove">Remove</button>
+                            </div>
+
+                            <div class="mt-3 d-flex align-items-center">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showLoginIssue(false)">
+                                    <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to login
+                                </button>
+                                <span class="small text-muted ms-3 d-none" id="liBusy">Submitting...</span>
+                                <button type="submit" id="liSubmit" class="btn btn-sm btn-primary ms-auto">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ================= /LOGIN ISSUE CARD ================= -->
+
+            
+        </div>
+    </div>
+</div>
+
+
+    <form id="sessionExpireCheckForm" action="/vtop/session/expired/out">
+
+    </form>
+    <div class="fixed-bottom text-center text-light py-0 footercolor">
+            <span class="small">Copyright © <span class="trim d-none d-sm-inline-block">2026</span>
+                Software Development Cell, VIT, Bhopal-466 114.</span>
+    </div>
+
+    <div class="modal" tabindex="-1" id="sessionTimedOut">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-primary">Sorry !!!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-danger"> Session Timed Out</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/vtop/get/jq/js/1"></script>
+    <script type="text/javascript" src="/vtop/get/jq/js/3"></script>
+    <script type="text/javascript" src="/vtop/get/bs/js/3"></script>
+    <script type="text/javascript" src="/vtop/get/jq/js/4"></script>
+
+    <script>
+        /*<![CDATA[*/
+
+        var offsetHeight = document.getElementById('vtopOpenPageHeader').offsetHeight;
+        document.body.style.marginTop = offsetHeight + 'px';
+
+        function sessionExpiredCall() {
+            var form = document.getElementById("sessionExpireCheckForm");
+            form.submit();
+        }
+
+        history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+
+        /*]]>*/
+    </script>
+
+
+
+<script>
+    /*<![CDATA[*/
+
+    var captchaType=1;
+
+    $(document).ready(function () {
+        // FIX: only the LOGIN form's inputs trigger login on Enter.
+        // Before, pressing Enter in the Login Issue email box tried to log in.
+        $('#vtopLoginForm input').keyup(function (event) {
+            if (event.which === 13) {
+                event.preventDefault();
+                if(captchaType===1) {  // built-in captcha validation
+                    callBuiltValidation();
+                }else if(captchaType===2) {
+                    callGoogleValidation();  // google captcha validation
+                }
+            }
+        });
+    });
+
+    var isEyeOpened = false;
+
+    function loadCaptcha() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("captchaBlock").innerHTML = this.responseText;
+                document.getElementById("captchaStr").value = "";
+            }
+        };
+        xhttp.open("GET", "/vtop/get/new/captcha", true);
+        xhttp.send();
+    }
+
+    function callBuiltValidation() {
+        var gvalue = document.getElementById("g-recaptcha-response");
+        if (gvalue != null && gvalue != undefined && gvalue != '') {
+            document.getElementById('gResponse').value = gvalue.value;
+        }
+        document.getElementById('vtopLoginForm').submit();
+    }
+
+    function callGoogleValidation() {
+        grecaptcha.execute();
+    }
+
+    function toggleEye() {
+        if (isEyeOpened) {
+            isEyeOpened = false;
+            document.getElementById("passwordIcon").classList.remove('fa-eye-slash');
+            document.getElementById("passwordIcon").classList.add('text-danger');
+            document.getElementById("passwordIcon").classList.remove('text-primary');
+            document.getElementById("passwordIcon").classList.add('fa-eye');
+            document.getElementById("password").type = 'password';
+        } else {
+            isEyeOpened = true;
+            document.getElementById("passwordIcon").classList.add('fa-eye-slash');
+            document.getElementById("passwordIcon").classList.add('text-primary');
+            document.getElementById("passwordIcon").classList.remove('text-danger');
+            document.getElementById("passwordIcon").classList.remove('fa-eye');
+            document.getElementById("password").type = 'text';
+        }
+    }
+
+    function postTo(url, data, withWrapper, after) {
+        $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var reqTarget = withWrapper ? this.getResponseHeader('wrapper') : null;
+                if (reqTarget === 'null' || reqTarget === undefined
+                    || reqTarget === null || reqTarget === '') {
+                    reqTarget = "loginBox";
+                }
+                document.getElementById(reqTarget).innerHTML = this.responseText;
+                $.unblockUI();
+                if (after) { after(); }
+            }
+        };
+        xhttp.open("POST", url, true);
+        xhttp.send(data);
+    }
+
+    function formData(id) { return new FormData(document.getElementById(id)); }
+
+    function csrfData() {
+        var data = new FormData();
+        data.append("_csrf", "f1cc800f-a6d8-482d-ac0e-a4a438371510");
+        return data;
+    }
+
+    function resetPassword()    { postTo("/vtop/resetPassword", csrfData(), false); }
+    function forgotUserID()     { postTo("/vtop/forgotUserID", csrfData(), false); }
+    function getOTP()           { postTo("/vtop/generateOtp", formData('forgetPasswordForm'), false); }
+    function regenerateOTP()    { postTo("/vtop/resendOtp", formData('otpVerificationForm'), true); }
+    function getUserIDOTP()     { postTo("/vtop/get/otp/for/forget/userid", formData('forgetUserIDForm'), true); }
+    function verifyUserIDOTP()  { postTo("/vtop/validate/user/id/otp", formData('forgetUserIDForm'), true); }
+    function resendUserIDOTP()  { postTo("/vtop/resend/otp/for/userid", formData('forgetUserIDForm'), true); }
+    function doChangePassword() { postTo("/vtop/allowChangePassword", formData('changePwdForm'), true); }
+
+    function verifyOTP() {
+        postTo("/vtop/validateOtp", formData('otpVerificationForm'), true, function () {
+            var btn = document.getElementById("changePasswordBtn");
+            if (btn != null) {
+                btn.addEventListener('click', doChangePassword, false);
+            }
+        });
+    }
+
+    function myFunction() {
+        var newPassword = document.getElementById("newPassword");
+        var confirmNewPassword = document.getElementById("confirmNewPassword");
+
+        if (newPassword.type === "password" && confirmNewPassword.type === "password") {
+            newPassword.type = "text";
+            confirmNewPassword.type = "text";
+        } else {
+            newPassword.type = "password";
+            confirmNewPassword.type = "password";
+        }
+    }
+
+
+    /* =================== LOGIN ISSUE FORM =================== */
+
+    var LI_MAX = 5 * 1024 * 1024;
+    var LI_USERID = /^[A-Za-z0-9]{1,15}$/;   // letters and digits, up to 15 (same as login)
+    var LI_EMAIL = /^[A-Za-z0-9._%+-]+@vitbhopal\.ac\.in$/i;   // only @vitbhopal.ac.in
+    var LI_URL = "\/vtop\/ticketrise\/saveLoginIssue";
+    var LI_CSRF_HEADER = "X-CSRF-TOKEN";
+    var LI_CSRF_TOKEN = "f1cc800f-a6d8-482d-ac0e-a4a438371510";
+
+    function liEl(id) { return document.getElementById(id); }
+
+    function showLoginIssue(open) {
+        liEl('loginCard').classList.toggle('d-none', open);
+        liEl('loginIssueBox').classList.toggle('d-none', !open);
+        if (open) { liEl('liEmail').focus(); }
+    }
+
+    function liErr(id, msg) {
+        var e = liEl(id);
+        e.textContent = msg || '';
+        e.classList.toggle('d-none', !msg);
+    }
+
+    function liClearErrors() {
+        liErr('liUserIdErr'); liErr('liEmailErr'); liErr('liCategoryErr'); liErr('liDescriptionErr'); liErr('liImageErr');
+        ['liUserId', 'liEmail', 'liCategory', 'liDescription', 'liImage'].forEach(function (id) {
+            liEl(id).classList.remove('is-invalid');
+        });
+    }
+
+    function liFail(inputId, errId, msg) {
+        liEl(inputId).classList.add('is-invalid');
+        liErr(errId, msg);
+    }
+
+    function liImageProblem(file) {
+        if (!file) { return null; }
+        var ext = file.name.split('.').pop().toLowerCase();
+        var badType = file.type && file.type !== 'image/jpeg' && file.type !== 'image/png';
+        if (['jpg', 'jpeg', 'png'].indexOf(ext) < 0 || badType) { return 'Only JPG, JPEG and PNG images are allowed.'; }
+        if (file.size > LI_MAX) { return 'Image size should not exceed 5 MB.'; }
+        return null;
+    }
+
+    function liResetImage() {
+        liEl('liImage').value = '';
+        liEl('liPreview').removeAttribute('src');
+        liEl('liPreviewBox').classList.add('d-none');
+        liEl('liPreviewBox').classList.remove('d-flex');
+    }
+
+    function liShowMessage(type, html) {
+        var box = liEl('liMsg');
+        box.className = 'alert alert-' + type + ' small py-2';
+        box.innerHTML = html;
+        box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function liEscape(s) {
+        var d = document.createElement('div');
+        d.textContent = s;
+        return d.innerHTML;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        var form = liEl('loginIssueForm');
+        if (!form) { return; }
+
+        liEl('liDescription').addEventListener('input', function () {
+            liEl('liCount').textContent = this.value.length;
+            this.classList.remove('is-invalid'); liErr('liDescriptionErr');
+        });
+        liEl('liUserId').addEventListener('input', function () { this.classList.remove('is-invalid'); liErr('liUserIdErr'); });
+        liEl('liEmail').addEventListener('input', function () { this.classList.remove('is-invalid'); liErr('liEmailErr'); });
+        liEl('liCategory').addEventListener('change', function () { this.classList.remove('is-invalid'); liErr('liCategoryErr'); });
+
+        liEl('liImage').addEventListener('change', function () {
+            var file = this.files && this.files[0];
+            liEl('liImage').classList.remove('is-invalid'); liErr('liImageErr');
+            if (!file) { liResetImage(); return; }
+
+            var problem = liImageProblem(file);
+            if (problem) { liFail('liImage', 'liImageErr', problem); liResetImage(); return; }
+
+            var reader = new FileReader();
+            reader.onload = function (ev) {
+                liEl('liPreview').src = ev.target.result;
+                liEl('liFileName').textContent = file.name;
+                liEl('liFileSize').textContent = file.size < 1048576
+                    ? (file.size / 1024).toFixed(1) + ' KB'
+                    : (file.size / 1048576).toFixed(2) + ' MB';
+                liEl('liPreviewBox').classList.remove('d-none');
+                liEl('liPreviewBox').classList.add('d-flex');
+            };
+            reader.readAsDataURL(file);
+        });
+
+        liEl('liRemove').addEventListener('click', liResetImage);
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            liClearErrors();
+
+            var userId = liEl('liUserId').value.trim().toUpperCase();
+            var email = liEl('liEmail').value.trim();
+            var category = liEl('liCategory').value;
+            var description = liEl('liDescription').value.trim();
+            var file = liEl('liImage').files[0];
+            var first = null;
+
+            if (!userId) { liFail('liUserId', 'liUserIdErr', 'Enter your VTOP User ID.'); first = first || 'liUserId'; }
+            else if (!LI_USERID.test(userId)) { liFail('liUserId', 'liUserIdErr', 'User ID can have only letters and numbers (maximum 15).'); first = first || 'liUserId'; }
+
+            if (!email) { liFail('liEmail', 'liEmailErr', 'Enter your email address.'); first = first || 'liEmail'; }
+            else if (!LI_EMAIL.test(email)) { liFail('liEmail', 'liEmailErr', 'Use your VIT Bhopal email address (name@vitbhopal.ac.in).'); first = first || 'liEmail'; }
+
+            if (!category) { liFail('liCategory', 'liCategoryErr', 'Select a category.'); first = first || 'liCategory'; }
+            if (!description) { liFail('liDescription', 'liDescriptionErr', 'Describe the issue you are facing.'); first = first || 'liDescription'; }
+
+            if (!file) {
+                liFail(
+                    'liImage',
+                    'liImageErr',
+                    'Please upload a screenshot of the issue.'
+                );
+                first = first || 'liImage';
+            } else {
+                var problem = liImageProblem(file);
+
+                if (problem) {
+                    liFail(
+                        'liImage',
+                        'liImageErr',
+                        problem
+                    );
+                    first = first || 'liImage';
+                }
+            }
+
+            if (first) { liEl(first).focus(); return; }
+
+            var btn = liEl('liSubmit');
+            btn.disabled = true;
+            liEl('liBusy').classList.remove('d-none');
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState !== 4) { return; }
+
+                btn.disabled = false;
+                liEl('liBusy').classList.add('d-none');
+
+                if (this.status === 200) {
+                    var doc = new DOMParser().parseFromString(this.responseText, 'text/html');
+                    var ticket = doc.getElementById('liNewTicketNo');
+                    var okBox = doc.getElementById('liAlertSuccess');
+                    var errBox = doc.getElementById('liAlertError');
+
+                    if (ticket && ticket.textContent.trim()) {
+                        var text = okBox && okBox.querySelector('strong') ? okBox.querySelector('strong').textContent : 'Login issue submitted.';
+                        liShowMessage('success',
+                            '<strong>' + liEscape(text) + '</strong><br>Ticket number: <strong class="fs-5">'
+                            + liEscape(ticket.textContent.trim()) + '</strong>');
+                        form.reset();
+                        liResetImage();
+                        liEl('liCount').textContent = '0';
+                    } else if (errBox) {
+                        liShowMessage('danger', liEscape(errBox.textContent.trim()));
+                    } else {
+                        liShowMessage('danger', 'Unable to submit the login issue. Please try again.');
+                    }
+                } else if (this.status === 403) {
+                    liShowMessage('danger', 'Your session has expired. Please refresh the page and try again.');
+                } else if (this.status === 413) {
+                    liShowMessage('danger', 'The image is too large for the server. Please upload a smaller image.');
+                } else {
+                    liShowMessage('danger', 'Unable to submit the login issue. Please try again.');
+                }
+            };
+
+            var data = new FormData(form);
+            data.set('userId', userId);
+            data.delete('image');
+            if (file) { data.append('image', file, file.name); }
+
+            xhttp.open('POST', LI_URL, true);
+            if (LI_CSRF_HEADER && LI_CSRF_TOKEN) { xhttp.setRequestHeader(LI_CSRF_HEADER, LI_CSRF_TOKEN); }
+            xhttp.send(data);
+        });
+    });
+
+    /*]]>*/
+</script>
+
+
+
+    <script src="/js/login-bridge.js"></script>
+</body></html>

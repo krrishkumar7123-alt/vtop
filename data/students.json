@@ -1,0 +1,592 @@
+[
+  {
+    "registerNumber": "25BCE10137",
+    "password": "demo123",
+    "role": "student",
+    "name": "KRRISH KUMAR",
+    "photoUrl": "/uploads/25BCE10137.png",
+    "program": "BTECH - Computer Science and Engineering (Cloud Computing and Automation)",
+    "email": "krrish.25bce10137@vitbhopal.ac.in",
+    "school": "School of Computing Science Engineering and Artificial Intelligence (SCAI)",
+    "proctorMessage": "Dear Alex, please ensure your attendance is above 75% in all subjects. Meet me during office hours if you need guidance. - Dr. Vance",
+    "personal": {
+      "applicationNumber": "2025022301",
+      "name": "KRRISH KUMAR",
+      "dateOfBirth": "08-Apr-2006",
+      "gender": "MALE",
+      "nativeLanguage": "HINDI",
+      "nativeState": "BIHAR",
+      "bloodGroup": "O+",
+      "physicallyChallenged": "NO",
+      "community": "GENERAL",
+      "religion": "HINDU",
+      "nationality": "INDIAN",
+      "hosteller": "HOSTELLER",
+      "governmentIdNumber": "547187724177",
+      "mobileNumber": "8355990423",
+      "currentAddress": {
+        "street": "SHASHAANK 6D. VARUNAPURI, TRISHUL HILL",
+        "area": "DABOLIM AIRPORT",
+        "city": "SOUTH GOA",
+        "state": "GOA",
+        "country": "INDIA",
+        "pincode": "403802",
+        "landline": "",
+        "email": "krrishkumar7123@gmail.com"
+      },
+      "permanentAddress": {
+        "street": "MADHUPALLY COLONY, DANAPUR",
+        "area": "Bailey road , saguna more",
+        "city": "PATNA",
+        "state": "BIHAR",
+        "country": "INDIA",
+        "pincode": "801503",
+        "landline": "+1-555-018-9922",
+        "email": "alex.home@example.com",
+        "friendMobileNumber": "+1-555-017-7711"
+      },
+      "caste": "AHIR",
+      "governmentIdType": "Aadhar"
+    },
+    "educational": {
+      "appliedDegree": "UG",
+      "qualification": "12TH/INTERMEDIATE",
+      "branchGroupStudied": "CSE(CLOUD COMPUTING AND AUTOMATION)",
+      "schoolName": "NAVY CHILDREN SCHOOL",
+      "mediumOfStudy": "ENGLISH",
+      "board": "CENTRAL BOARD OF SECONDARY EDUCATION",
+      "registerRollNo": "15601633",
+      "classObtained": "12",
+      "yearOfPassing": "2024",
+      "monthOfPassing": "MAY",
+      "schoolAddress": {
+        "area": "DABOLIM",
+        "cityDistrict": "SOUTH GOA",
+        "state": "GOA",
+        "pincode": "403801",
+        "landline": ""
+      },
+      "breakInStudy": "YES",
+      "breakReason": "PREPARE BETTER FOR MY ACADEMIC GROWTH"
+    },
+    "family": {
+      "numberOfBrothers": "1",
+      "numberOfSisters": "0",
+      "siblingStudyingInUniversity": "No",
+      "siblingStudyingDetails": "",
+      "siblingStudied": "No",
+      "siblingStudiedDetails": "",
+      "father": {
+        "name": "Robert Johnson",
+        "qualification": "M.S. Mechanical Engineering",
+        "occupation": "Senior Engineering Manager",
+        "organization": "AeroTech Systems Inc.",
+        "employeeId": "AT-5412",
+        "mobile": "+1-555-012-3344",
+        "email": "robert.johnson@aerotech-example.com",
+        "annualIncome": "125000",
+        "officialAddress": "100 Industrial Parkway, Suite 400",
+        "state": "California",
+        "city": "San Diego",
+        "pincode": "92121",
+        "landline": "+1-555-012-8800",
+        "designation": "Chief Technical Architect"
+      },
+      "mother": {
+        "name": "Eleanor Johnson",
+        "qualification": "Ph.D. Biochemistry",
+        "occupation": "Professor & Researcher",
+        "organization": "State Health Sciences University",
+        "employeeId": "SHS-8821",
+        "mobile": "+1-555-013-5566",
+        "email": "eleanor.johnson@healthsci-example.edu",
+        "annualIncome": "115000",
+        "officialAddress": "400 Medical Center Way, Research Wing B",
+        "state": "California",
+        "city": "San Diego",
+        "pincode": "92103",
+        "landline": "+1-555-013-9900",
+        "designation": "Associate Professor"
+      },
+      "guardian": {
+        "name": "Marcus Sterling",
+        "qualification": "LL.M. Corporate Law",
+        "occupation": "Legal Counsel",
+        "organization": "Sterling & Partners LLP",
+        "employeeId": "SP-102",
+        "mobile": "+1-555-016-7788",
+        "email": "marcus.sterling@sterlinglegal-example.com",
+        "annualIncome": "140000",
+        "officialAddress": "250 Financial Plaza, 12th Floor",
+        "state": "California",
+        "city": "San Diego",
+        "pincode": "92101",
+        "landline": "+1-555-016-1122",
+        "designation": "Senior Managing Partner"
+      }
+    },
+    "proctor": {
+      "proctorName": "AKSHARA MAKRARIYA",
+      "employeeId": "100079",
+      "designation": "Associate Professor Grade 2",
+      "school": "School of Applied Science and Language",
+      "cabinRoom": "null",
+      "email": "akshara.makrariya@vitbhopal.ac.in",
+      "mobile": "7748836973",
+      "department": "SASL-Department",
+      "intercom": ""
+    },
+    "hostel": {
+      "applicationNumber": "2025022301",
+      "registerNumber": "25BCE10137",
+      "blockName": "MENS HOSTEL BLOCK-5 (BOYS HOSTEL - Block )",
+      "roomNo": "B213",
+      "bedType": "4- BED -NACPF",
+      "messInformation": "NON VEG- M/S MAYURI CATERERS"
+    },
+    "courses": [
+      {
+        "code": "CSE1001",
+        "title": "Problem Solving and Programming",
+        "type": "Theory",
+        "attendance": 95
+      },
+      {
+        "code": "CSE1002",
+        "title": "Digital Logic Design",
+        "type": "Theory",
+        "attendance": 82
+      },
+      {
+        "code": "CSE1003",
+        "title": "Data Structures",
+        "type": "Embedded Theory",
+        "attendance": 91
+      },
+      {
+        "code": "CSE1004",
+        "title": "Computer Organization",
+        "type": "Theory",
+        "attendance": 68
+      },
+      {
+        "code": "MAT1001",
+        "title": "Calculus and Linear Algebra",
+        "type": "Theory",
+        "attendance": 88
+      },
+      {
+        "code": "CSE1005",
+        "title": "Programming Lab",
+        "type": "Lab",
+        "attendance": 96
+      }
+    ],
+    "credits": {
+      "required": 160,
+      "earned": 42
+    },
+    "cgpa": 8.56,
+    "passwordHash": "$2a$10$sGUK3cXq2fWlJgq/Xz.jTuO5Av8G7Coe7DZWx7BnFEYbYzLYOQk5."
+  },
+  {
+    "registerNumber": "DEMO0002",
+    "password": "demo123",
+    "role": "student",
+    "name": "Priya Sharma",
+    "photoUrl": "",
+    "program": "B.Tech. Computer Science",
+    "email": "priya.sharma@example.edu",
+    "school": "School of Computer Science and Engineering",
+    "proctorMessage": "Keep up the good work, Priya!",
+    "personal": {
+      "applicationNumber": "APP2022091500",
+      "name": "Priya Sharma",
+      "dateOfBirth": "2004-08-22",
+      "gender": "Female",
+      "nativeLanguage": "Hindi",
+      "nativeState": "Madhya Pradesh",
+      "bloodGroup": "B+",
+      "physicallyChallenged": "No",
+      "community": "OBC",
+      "religion": "Hindu",
+      "nationality": "Indian",
+      "hosteller": "Yes",
+      "governmentIdNumber": "ABCDE1234F",
+      "mobileNumber": "9876543210",
+      "currentAddress": {
+        "street": "12 Hostel Road",
+        "area": "Campus",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "pincode": "462001",
+        "landline": "",
+        "email": "priya.sharma@example.edu"
+      },
+      "permanentAddress": {
+        "street": "45 MG Road",
+        "area": "Indore",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "pincode": "452001",
+        "landline": "",
+        "email": "priya.home@example.com",
+        "friendMobileNumber": "9876500000"
+      }
+    },
+    "educational": {
+      "appliedDegree": "B.Tech",
+      "qualification": "Higher Secondary",
+      "branchGroupStudied": "PCM",
+      "schoolName": "DPS Indore",
+      "mediumOfStudy": "English",
+      "board": "CBSE",
+      "registerRollNo": "DPS2022-1234",
+      "classObtained": "First Class",
+      "yearOfPassing": "2022",
+      "monthOfPassing": "June",
+      "schoolAddress": {
+        "area": "AB Road",
+        "cityDistrict": "Indore",
+        "state": "Madhya Pradesh",
+        "pincode": "452001",
+        "landline": ""
+      },
+      "breakInStudy": "No",
+      "breakReason": ""
+    },
+    "family": {
+      "numberOfBrothers": "0",
+      "numberOfSisters": "1",
+      "siblingStudyingInUniversity": "No",
+      "siblingStudyingDetails": "",
+      "siblingStudied": "No",
+      "siblingStudiedDetails": "",
+      "father": {
+        "name": "Rajesh Sharma",
+        "qualification": "MBA",
+        "occupation": "Business",
+        "organization": "Sharma Enterprises",
+        "employeeId": "SE-001",
+        "mobile": "9876501234",
+        "email": "rajesh@example.com",
+        "annualIncome": "800000",
+        "officialAddress": "100 Business Park",
+        "state": "Madhya Pradesh",
+        "city": "Indore",
+        "pincode": "452001",
+        "landline": "",
+        "designation": "Director"
+      },
+      "mother": {
+        "name": "Sunita Sharma",
+        "qualification": "M.A.",
+        "occupation": "Teacher",
+        "organization": "Govt. School",
+        "employeeId": "GS-500",
+        "mobile": "9876505678",
+        "email": "sunita@example.com",
+        "annualIncome": "500000",
+        "officialAddress": "Govt. School Campus",
+        "state": "Madhya Pradesh",
+        "city": "Indore",
+        "pincode": "452001",
+        "landline": "",
+        "designation": "PGT"
+      },
+      "guardian": {
+        "name": "",
+        "qualification": "",
+        "occupation": "",
+        "organization": "",
+        "employeeId": "",
+        "mobile": "",
+        "email": "",
+        "annualIncome": "",
+        "officialAddress": "",
+        "state": "",
+        "city": "",
+        "pincode": "",
+        "landline": "",
+        "designation": ""
+      }
+    },
+    "proctor": {
+      "proctorName": "Dr. Anita Mehta",
+      "employeeId": "FAC-2019-101",
+      "designation": "Professor",
+      "school": "SCOPE",
+      "cabinRoom": "AB-201",
+      "email": "anita.mehta@example.edu",
+      "mobile": "9876509999"
+    },
+    "hostel": {
+      "applicationNumber": "HST-2022-500",
+      "registerNumber": "DEMO0002",
+      "blockName": "Block A - Girls",
+      "roomNo": "A-105",
+      "bedType": "Three Bedded Non-AC",
+      "messInformation": "Veg Mess - South Block"
+    },
+    "courses": [
+      {
+        "code": "CSE1001",
+        "title": "Problem Solving and Programming",
+        "type": "Theory",
+        "attendance": 90
+      },
+      {
+        "code": "CSE1002",
+        "title": "Digital Logic Design",
+        "type": "Theory",
+        "attendance": 78
+      },
+      {
+        "code": "MAT1001",
+        "title": "Calculus and Linear Algebra",
+        "type": "Theory",
+        "attendance": 85
+      }
+    ],
+    "credits": {
+      "required": 160,
+      "earned": 20
+    },
+    "cgpa": 8.12,
+    "passwordHash": "$2a$10$dNeLY7CxKkB1tdPi2cA6kOEdCtYBBuBxfKvdrQk3Ydsbizu1HUEAC"
+  },
+  {
+    "registerNumber": "DEMO0003",
+    "password": "demo123",
+    "role": "student",
+    "name": "Rahul Verma",
+    "photoUrl": "",
+    "program": "B.Tech. Electronics",
+    "email": "rahul.verma@example.edu",
+    "school": "School of Electronics Engineering",
+    "proctorMessage": "Rahul, your attendance in CSE1004 is below 75%. Please improve.",
+    "personal": {
+      "applicationNumber": "APP2022091600",
+      "name": "Rahul Verma",
+      "dateOfBirth": "2003-12-01",
+      "gender": "Male",
+      "nativeLanguage": "Hindi",
+      "nativeState": "Uttar Pradesh",
+      "bloodGroup": "A+",
+      "physicallyChallenged": "No",
+      "community": "General",
+      "religion": "Hindu",
+      "nationality": "Indian",
+      "hosteller": "No",
+      "governmentIdNumber": "XYZAB9876K",
+      "mobileNumber": "9123456789",
+      "currentAddress": {
+        "street": "78 Station Road",
+        "area": "Civil Lines",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "pincode": "462001",
+        "landline": "",
+        "email": "rahul.verma@example.edu"
+      },
+      "permanentAddress": {
+        "street": "33 Nehru Nagar",
+        "area": "Lucknow",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "country": "India",
+        "pincode": "226001",
+        "landline": "",
+        "email": "rahul.home@example.com",
+        "friendMobileNumber": "9123400000"
+      }
+    },
+    "educational": {
+      "appliedDegree": "B.Tech",
+      "qualification": "Intermediate",
+      "branchGroupStudied": "PCM",
+      "schoolName": "City Montessori School",
+      "mediumOfStudy": "English",
+      "board": "ISC",
+      "registerRollNo": "CMS2022-5678",
+      "classObtained": "First Class",
+      "yearOfPassing": "2022",
+      "monthOfPassing": "May",
+      "schoolAddress": {
+        "area": "Gomti Nagar",
+        "cityDistrict": "Lucknow",
+        "state": "Uttar Pradesh",
+        "pincode": "226010",
+        "landline": ""
+      },
+      "breakInStudy": "No",
+      "breakReason": ""
+    },
+    "family": {
+      "numberOfBrothers": "2",
+      "numberOfSisters": "0",
+      "siblingStudyingInUniversity": "Yes",
+      "siblingStudyingDetails": "Brother in B.Tech 3rd year",
+      "siblingStudied": "No",
+      "siblingStudiedDetails": "",
+      "father": {
+        "name": "Suresh Verma",
+        "qualification": "B.Com",
+        "occupation": "Accountant",
+        "organization": "State Bank",
+        "employeeId": "SB-3456",
+        "mobile": "9123401234",
+        "email": "suresh@example.com",
+        "annualIncome": "600000",
+        "officialAddress": "SBI Main Branch",
+        "state": "Uttar Pradesh",
+        "city": "Lucknow",
+        "pincode": "226001",
+        "landline": "",
+        "designation": "Senior Accountant"
+      },
+      "mother": {
+        "name": "Meena Verma",
+        "qualification": "B.A.",
+        "occupation": "Homemaker",
+        "organization": "",
+        "employeeId": "",
+        "mobile": "9123405678",
+        "email": "meena@example.com",
+        "annualIncome": "",
+        "officialAddress": "",
+        "state": "Uttar Pradesh",
+        "city": "Lucknow",
+        "pincode": "226001",
+        "landline": "",
+        "designation": ""
+      },
+      "guardian": {
+        "name": "",
+        "qualification": "",
+        "occupation": "",
+        "organization": "",
+        "employeeId": "",
+        "mobile": "",
+        "email": "",
+        "annualIncome": "",
+        "officialAddress": "",
+        "state": "",
+        "city": "",
+        "pincode": "",
+        "landline": "",
+        "designation": ""
+      }
+    },
+    "proctor": {
+      "proctorName": "Dr. Ronald Vance",
+      "employeeId": "FAC-2018-094",
+      "designation": "Associate Professor",
+      "school": "SCOPE",
+      "cabinRoom": "TT-418",
+      "email": "ronald.vance@example.edu",
+      "mobile": "9876543000"
+    },
+    "hostel": {
+      "applicationNumber": "",
+      "registerNumber": "DEMO0003",
+      "blockName": "",
+      "roomNo": "",
+      "bedType": "",
+      "messInformation": ""
+    },
+    "courses": [
+      {
+        "code": "ECE1001",
+        "title": "Basic Electronics",
+        "type": "Theory",
+        "attendance": 72
+      },
+      {
+        "code": "ECE1002",
+        "title": "Circuit Theory",
+        "type": "Theory",
+        "attendance": 65
+      },
+      {
+        "code": "MAT1001",
+        "title": "Calculus and Linear Algebra",
+        "type": "Theory",
+        "attendance": 80
+      }
+    ],
+    "credits": {
+      "required": 160,
+      "earned": 18
+    },
+    "cgpa": 7.45,
+    "passwordHash": "$2a$10$1f0YlDi2J.1nNsHPowJc4.MBnCsIuZtxgt0WYQ1hZe7wLhp9qc6JO"
+  },
+  {
+    "registerNumber": "ADMIN",
+    "password": "admin123",
+    "role": "admin",
+    "name": "System Administrator",
+    "photoUrl": "",
+    "program": "Administration",
+    "email": "admin@example.edu",
+    "school": "Administration Office",
+    "proctorMessage": "",
+    "personal": {
+      "applicationNumber": "",
+      "name": "System Administrator",
+      "dateOfBirth": "",
+      "gender": "",
+      "nativeLanguage": "",
+      "nativeState": "",
+      "bloodGroup": "",
+      "physicallyChallenged": "No",
+      "community": "",
+      "religion": "",
+      "nationality": "",
+      "hosteller": "No",
+      "governmentIdNumber": "",
+      "mobileNumber": "",
+      "currentAddress": {},
+      "permanentAddress": {}
+    },
+    "educational": {
+      "appliedDegree": "",
+      "qualification": "",
+      "branchGroupStudied": "",
+      "schoolName": "",
+      "mediumOfStudy": "",
+      "board": "",
+      "registerRollNo": "",
+      "classObtained": "",
+      "yearOfPassing": "",
+      "monthOfPassing": "",
+      "schoolAddress": {},
+      "breakInStudy": "No",
+      "breakReason": ""
+    },
+    "family": {
+      "numberOfBrothers": "0",
+      "numberOfSisters": "0",
+      "siblingStudyingInUniversity": "No",
+      "siblingStudyingDetails": "",
+      "siblingStudied": "No",
+      "siblingStudiedDetails": "",
+      "father": {},
+      "mother": {},
+      "guardian": {}
+    },
+    "proctor": {},
+    "hostel": {},
+    "courses": [],
+    "credits": {
+      "required": 0,
+      "earned": 0
+    },
+    "cgpa": 0,
+    "passwordHash": "$2a$10$6coIsuSpb/VwnCyylYZ22.wheHDWEOUuU4uq/PlITkGczVZSNY7ly"
+  }
+]
