@@ -47,8 +47,12 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Directories
 const uploadsPath = path.join(__dirname, 'uploads');
-if (!fs.existsSync(uploadsPath)) {
-  fs.mkdirSync(uploadsPath, { recursive: true });
+try {
+  if (!fs.existsSync(uploadsPath)) {
+    fs.mkdirSync(uploadsPath, { recursive: true });
+  }
+} catch (_) {
+  // Ignore on read-only serverless filesystems (e.g., Vercel)
 }
 
 const publicPath = path.join(__dirname, 'public');
@@ -202,9 +206,11 @@ app.get('/admin', (req, res) => {
   res.sendFile(path.join(publicPath, 'admin.html'));
 });
 
-// Start server
-const server = app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+// Start server (skip listen on Vercel serverless)
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
+}
 
 module.exports = app;
